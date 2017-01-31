@@ -1,0 +1,9 @@
+body{   
+  margin:0 auto; 
+  background:#F0F0F0;
+}
+
+row-1{
+  background: #ffffff;
+  z-index: 50;
+}
