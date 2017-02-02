@@ -3,78 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <link href="./../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <title>Tickets</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <div class="row" style="background: #000000; height: 200px; margin: 0px; padding-left: -10px; ">
-    </div>
-    <div>
-      <div class="row">
-        <h4 class="title">ENABLED TICKETS</h4>
-      </div>
-      <div class="row">
-        <p class="title-tickets">View archived tickets</p>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="subtitle">Problem</p>
-        </div>
-        <div class="col-sm-3">
-          <p class="subtitle">Description</p>
-        </div>
-        <div class="col-sm-2">
-          <p class="subtitle">State</p>
-        </div>
-        <div class="col-sm-2">
-          <p class="subtitle">Last Update</p>
-        </div>
-        <div class="col-sm-2">
-        </div>
-      </div>
-      <div class="row" style="background: #000D1B; margin-left: 10px;">
-        <div class="col-sm-3">
-          <p class="content">List not found</p>
-          <p class="sub-content">US28456</p>
-        </div>
-        <div class="col-sm-3">
-          <p class="content">World of Warcraft</p>
-        </div>
-        <div class="col-sm-2">
-          <p class="content">Resolved</p>
-        </div>
-        <div class="col-sm-2">
-          <p class="content">Now</p>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" class="btn btn-primary tickets" style="font-size: 10px; margin-top: 15px; margin-bottom: 15px;">Answer survey</button>
-          <button type="button" class="btn btn-primary" style="font-size: 10px; margin-bottom: 15px; margin-left: 25px;">Re-open</button>
-        </div>
-      </div>
-      <footer>
-        <p class="ticket-footer">Do you have a new problem? Contact customer support</p>
-      </footer>
-    </div>
-    <div class="row" style="background: #000000; height: 320px; margin: 0px; padding-left: -10px; ">
-    </div>
 
-    <!--{{content-for "head"}}-->
+    {{content-for "head"}}
 
-    <link rel="stylesheet" href="styles/vendor.css">
-    <link rel="stylesheet" href="styles/tickets.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/tickets.css">
 
-    <!--{{content-for "head-footer"}}-->
+    {{content-for "head-footer"}}
   </head>
   <body>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./../bower_components/bootstrap/dist/js/bootstrap.min.js"> </script>
-    
-    <!--{{content-for "body"}}-->
+    {{content-for "body"}}
 
-    <script src="./../vendor/vendor.js"></script>
-    <script src="./../vendor/tickets.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/tickets.js"></script>
 
-    <!--{{content-for "body-footer"}}-->
+    {{content-for "body-footer"}}
   </body>
 </html>

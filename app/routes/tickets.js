@@ -7,16 +7,16 @@ export default Ember.Route.extend({
       setTimeout(function () {
         resolve([
           {
-            titulo: "Ticket 1",
+            title: "Ticket 1",
             description: "desc 1",
-            solucion: "solucion 1",
-            fecha: "10-10-10"
+            solution: "solucion 1",
+            date: "10-10-10"
           },
           {
-            titulo: "Ticket 2",
+            title: "Ticket 2",
             description: "desc 2",
-            solucion: "solucion 2",
-            fecha: "10-10-10"
+            solution: "solucion 2",
+            date: "10-10-10"
           }
         ]);
       }, 5000);
